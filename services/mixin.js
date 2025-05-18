@@ -1,4 +1,5 @@
 export const observerMixin = { 
+    observers: new Set(),
     addObserver(obs){
         this.observers.add(obs);
     },
